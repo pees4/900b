@@ -10,7 +10,7 @@ color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
 if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 function awaitpl() {
 document.getElementById("loader").style.display = "none";
-document.getElementById("awaiting").style.display = "block";
+//document.getElementById("awaiting").style.display = "block";
 }
 function ghdone() {
 document.getElementById("loader").style.display = "none";
@@ -25,7 +25,7 @@ PLfile = "goldhen.bin";
 </head>
 <body>
 <div id="loader" class="info">Memuat Payload, harap tunggu...</div>
-<div id="awaiting" class="info" style="display:none;">Kirim Payload ke Port 9020</div>
+<!-- <div id="awaiting" class="info" style="display:none;">Kirim Payload ke Port 9020</div> -->
 <div id="done" class="info" style="display:none;">Berhasil. Cabut USB Drive sekarang!</div>
 <script>
 var req = new XMLHttpRequest();
